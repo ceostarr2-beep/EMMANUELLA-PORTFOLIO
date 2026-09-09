@@ -1,0 +1,1 @@
+This portfolio is a premium digital portfolio designed for Olong Emmanuella Anigo, combining her passion for pharmacy, science communication, research-backed writing, copywriting, storytelling, and creative content into one interactive editorial experience.
