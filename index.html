@@ -814,336 +814,299 @@ footer span {
         flex-direction: column;
     }
 }
-/* PHONE IMAGE FIX */
-@media (max-width: 600px) {
-    .cover-photo {
-        width: 100%;
-        max-width: 330px;
-        height: 430px;
-        margin: 0 auto;
-        overflow: hidden;
-        border-radius: 18px;
-    }
-
-    .cover-photo img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center top;
-    }
-}
 /* =========================================
-   MOBILE WIDTH & OVERFLOW FIX
+   FINAL RESPONSIVE DESIGN
 ========================================= */
 
+/* Keep the main page full width */
 html,
 body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
 }
 
-* {
-    box-sizing: border-box;
-    max-width: 100%;
-}
-
-img,
-video {
-    max-width: 100%;
-}
-
-section,
-header,
-main,
-footer {
+section {
     width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
 }
 
-/* Prevent large headings from pushing the page sideways */
-h1,
-h2,
-h3,
-p {
-    overflow-wrap: break-word;
-}
+/* =========================
+   TABLET
+========================= */
 
-/* =========================================
-   PHONE VERSION
-========================================= */
-
-@media (max-width: 600px) {
-
-    body {
-        overflow-x: hidden !important;
-    }
-
-    .container {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-        margin: 0 auto !important;
-    }
-
-    h1 {
-        font-size: clamp(38px, 12vw, 55px) !important;
-        line-height: .95 !important;
-        letter-spacing: -1.5px !important;
-    }
-
-    h2 {
-        font-size: 32px !important;
-    }
-
-    /* Images */
-    .cover-photo,
-    .hero-image {
-        width: 100% !important;
-        max-width: 330px !important;
-        height: auto !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-
-    .cover-photo img,
-    .hero-image img {
-        width: 100% !important;
-        height: auto !important;
-        object-fit: cover;
-    }
-
-    /* Cards */
-    .card,
-    .feature-card,
-    .service-card {
-        width: 100% !important;
-        max-width: 100% !important;
-    }
-
-    /* Grids become one column */
-    .grid,
-    .cards,
-    .services-grid {
-        grid-template-columns: 1fr !important;
-    }
-}
-/* =========================================
-   MOBILE NAVIGATION
-========================================= */
-
-.navbar,
-nav {
-    width: 100% !important;
-    max-width: 100% !important;
-    left: 0 !important;
-    right: 0 !important;
-}
-
-@media (max-width: 600px) {
-
-    nav {
-        position: fixed !important;
-        top: 0;
-        left: 0 !important;
-        width: 100% !important;
-        height: 65px;
-        z-index: 9999;
-        display: flex !important;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 18px !important;
-    }
-
-    nav .nav-links {
-        display: none !important;
-    }
-
-    nav .menu-btn,
-    nav .hamburger,
-    nav .mobile-menu-btn {
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
-        width: 42px;
-        height: 42px;
-        cursor: pointer;
-    }
-
-    .hero {
-        padding-top: 90px !important;
-    }
-}
-/* =========================================
-   MOBILE NAVIGATION FIX
-========================================= */
-
-.menu-btn {
-    display: none;
-    background: none;
-    border: 1px solid rgba(255,255,255,0.2);
-    color: white;
-    font-size: 24px;
-    width: 44px;
-    height: 44px;
-    border-radius: 10px;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-}
-
-/* PHONE */
 @media (max-width: 900px) {
 
+    .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 120px 6% 70px;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        width: 100%;
+        margin-top: 45px;
+    }
+
+    .image-frame {
+        width: min(430px, 85vw);
+        height: 520px;
+        margin: 0 auto;
+    }
+
+    /* Hide floating cards on smaller screens */
+    .floating-card {
+        display: none;
+    }
+
+    .dual-grid,
+    .editorial,
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .articles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .intro-strip {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+}
+
+/* =========================
+   PHONE
+========================= */
+
+@media (max-width: 600px) {
+
     nav {
-        padding: 14px 20px !important;
         height: 68px;
+        padding: 12px 20px !important;
     }
 
     .logo {
         font-size: 21px;
     }
 
-    .menu-btn {
-        display: flex !important;
-        position: relative;
-        z-index: 10002;
-    }
-
-    .nav-links {
-        display: none !important;
-        position: absolute;
-        top: 68px;
-        left: 0;
-        width: 100%;
-        background: rgba(6,26,53,0.98);
-        backdrop-filter: blur(20px);
-        padding: 20px;
-        flex-direction: column;
-        gap: 0;
-        border-bottom: 1px solid rgba(255,255,255,0.12);
-        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-    }
-
-    .nav-links.active {
-        display: flex !important;
-    }
-
-    .nav-links li {
-        width: 100%;
-        list-style: none;
-    }
-
-    .nav-links a {
-        display: block;
-        width: 100%;
-        padding: 16px 10px;
-        font-size: 15px;
-    }
-
     .hero {
-        padding-top: 100px !important;
-    }
-}
-
-/* =========================================
-   PHONE SIZE FIX
-========================================= */
-
-@media (max-width: 600px) {
-
-    html,
-    body {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden !important;
-    }
-
-    section {
-        width: 100%;
-        max-width: 100%;
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-    }
-
-    .hero {
-        width: 100%;
         display: flex;
         flex-direction: column;
-        padding-left: 20px !important;
-        padding-right: 20px !important;
+        width: 100%;
+        min-height: auto;
+        padding: 105px 20px 65px !important;
+        gap: 0;
+        text-align: center;
     }
 
-    .hero h1 {
-        font-size: 44px !important;
-        line-height: 1 !important;
-        letter-spacing: -1px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    .hero-visual {
+    .hero-content {
         width: 100%;
         max-width: 100%;
-    }
-
-    .image-frame {
-        width: min(330px, 90vw) !important;
-        height: 430px !important;
         margin: 0 auto;
     }
 
-    .floating-card {
-        transform: scale(0.75);
+    .eyebrow {
+        justify-content: center;
+        font-size: 10px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
     }
 
-    .card-one {
-        left: -5px !important;
-        bottom: 3% !important;
+    .hero h1 {
+        font-size: 43px !important;
+        line-height: 1 !important;
+        letter-spacing: -1.5px;
+        margin-bottom: 22px;
     }
 
-    .card-two {
-        right: -5px !important;
-        top: 3% !important;
-    }
-
-    .intro-strip {
-        margin-left: 20px !important;
-        margin-right: 20px !important;
-        width: calc(100% - 40px) !important;
-    }
-
-    .intro-strip {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .glass-card,
-    .service,
-    .article,
-    .work-card {
+    .hero p {
         width: 100%;
-        max-width: 100%;
+        max-width: 500px;
+        margin: 0 auto 28px;
+        font-size: 15px;
+        line-height: 1.7;
     }
 
-    .about-image {
+    .buttons {
+        justify-content: center;
+    }
+
+    .btn {
+        padding: 13px 19px;
+        font-size: 13px;
+    }
+
+    /* HERO PHOTO */
+    .hero-visual {
+        width: 100%;
+        margin-top: 45px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-frame {
+        width: min(330px, 88vw) !important;
         height: 430px !important;
+        margin: 0 auto;
+        border-radius: 165px 165px 25px 25px;
     }
 
+    .image-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* Do not let the floating cards cover the image */
+    .floating-card {
+        display: none !important;
+    }
+
+    /* Decorative molecules */
+    .molecule.m1 {
+        top: 15%;
+        right: -35px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .molecule.m2 {
+        bottom: 5%;
+        left: -20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    /* STATS */
+    .intro-strip {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        padding: 20px 10px;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        border-radius: 22px;
+    }
+
+    .stat {
+        padding: 15px 5px;
+    }
+
+    .stat strong {
+        font-size: 30px;
+    }
+
+    .stat span {
+        font-size: 11px;
+    }
+
+    /* SECTIONS */
+    section {
+        padding: 75px 20px !important;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 36px;
+        line-height: 1.1;
+    }
+
+    /* CARDS */
+    .dual-grid,
+    .services,
+    .portfolio-grid,
+    .articles,
+    .editorial,
+    .about {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .glass-card {
+        padding: 28px;
+    }
+
+    .service {
+        padding: 28px;
+    }
+
+    /* PHARMACY IMAGE */
+    .editorial-image {
+        width: 100%;
+        height: 350px;
+        border-radius: 24px;
+    }
+
+    .editorial-content h2 {
+        font-size: 38px;
+    }
+
+    /* PORTFOLIO IMAGES */
+    .work-image {
+        height: 230px;
+    }
+
+    /* ABOUT IMAGE */
+    .about-image {
+        width: 100%;
+        height: 400px !important;
+    }
+
+    .about-text h2 {
+        font-size: 45px;
+    }
+
+    /* CONTACT */
     .contact-box {
-        padding: 40px 20px !important;
+        padding: 45px 20px !important;
+        border-radius: 25px;
     }
 
-    footer {
-        padding-left: 20px;
-        padding-right: 20px;
+    .contact-box h2 {
+        font-size: 43px;
     }
-</style>
+
+    /* FOOTER */
+    footer {
+        padding: 30px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+   </style>
 </head>
 
 
