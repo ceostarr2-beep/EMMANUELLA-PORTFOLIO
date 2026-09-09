@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Olong Emmanuella Anigo | Pharmacy & Creative Writing</title>
+
+<meta name="description" content="Portfolio of Olong Emmanuella Anigo — pharmacy student, blog writer, copywriter, brand storyteller, social media caption writer and research-backed SEO article writer.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+    --navy: #061A35;
+    --deep-blue: #082A52;
+    --blue: #0B4F9C;
+    --electric: #38BDF8;
+    --sky: #7DD3FC;
+    --white: #FFFFFF;
+    --ice: #E8F6FF;
+    --muted: #A9C4DD;
+    --glass: rgba(255,255,255,0.07);
+    --border: rgba(255,255,255,0.13);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background:
+        radial-gradient(circle at 10% 10%, rgba(56,189,248,0.16), transparent 25%),
+        radial-gradient(circle at 90% 30%, rgba(11,79,156,0.25), transparent 30%),
+        linear-gradient(135deg, #061A35, #082A52 45%, #041225);
+    color: var(--white);
+    overflow-x: hidden;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(6,26,53,0.72);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.logo {
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--electric);
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--electric);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    padding: 150px 7% 80px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--sky);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.eyebrow::before {
+    content: "";
+    width: 35px;
+    height: 1px;
+    background: var(--electric);
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(52px, 7vw, 95px);
+    line-height: 0.98;
+    margin-bottom: 28px;
+}
+
+.hero h1 span {
+    color: var(--electric);
+    font-style: italic;
+}
+
+.hero p {
+    max-width: 650px;
+    color: var(--muted);
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: var(--electric);
+    color: #031426;
+}
+
+.btn-primary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(56,189,248,0.25);
+}
+
+.btn-outline {
+    border: 1px solid rgba(255,255,255,0.25);
+    color: white;
+}
+
+.btn-outline:hover {
+    background: rgba(255,255,255,0.08);
+}
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.image-frame {
+    width: min(430px, 90vw);
+    height: 550px;
+    border-radius: 220px 220px 30px 30px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(125,211,252,0.4);
+    box-shadow:
+        0 0 80px rgba(56,189,248,0.12),
+        0 30px 80px rgba(0,0,0,0.35);
+}
+
+.image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(6,26,53,0.65),
+        transparent 50%
+    );
+}
+
+.floating-card {
+    position: absolute;
+    background: rgba(7,34,66,0.85);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+
+.card-one {
+    left: -70px;
+    bottom: 5%;
+}
+
+.card-two {
+    right: -70px;
+    top: 5%;
+}
+
+.floating-card strong {
+    display: block;
+    font-size: 22px;
+    color: var(--electric);
+}
+
+.floating-card small {
+    color: var(--muted);
+}
+@media (max-width: 600px) {
+    .floating-card.card-1 {
+        top: -35px;
+        right: 5px;
+    }
+
+    .floating-card.card-2 {
+        bottom: -35px;
+        left: 5px;
+    }
+/* =========================
+   MOLECULE DECORATION
+========================= */
+
+.molecule {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 1px solid rgba(56,189,248,0.25);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.molecule::before,
+.molecule::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(56,189,248,0.25);
+    border-radius: 50%;
+}
+
+.molecule::before {
+    inset: 20px -20px;
+}
+
+.molecule::after {
+    inset: -20px 20px;
+}
+
+.m1 {
+    top: 20%;
+    right: 8%;
+}
+
+.m2 {
+    bottom: 5%;
+    left: 5%;
+    width: 80px;
+    height: 80px;
+}
+
+@keyframes float {
+    50% {
+        transform: translateY(-20px) rotate(10deg);
+    }
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding: 110px 7%;
+}
+
+.section-heading {
+    max-width: 750px;
+    margin-bottom: 55px;
+}
+
+.section-heading .mini {
+    color: var(--electric);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.section-heading h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(40px, 5vw, 65px);
+    margin: 15px 0;
+}
+
+.section-heading p {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+/* =========================
+   INTRO STRIP
+========================= */
+
+.intro-strip {
+    margin: 0 7%;
+    padding: 35px;
+    border: 1px solid var(--border);
+    background: var(--glass);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.stat {
+    text-align: center;
+    padding: 15px;
+}
+
+.stat strong {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 35px;
+    color: var(--electric);
+}
+
+.stat span {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* =========================
+   PHARMACY + WRITING
+========================= */
+
+.dual-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.glass-card {
+    background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.09),
+        rgba(255,255,255,0.025)
+    );
+    border: 1px solid var(--border);
+    border-radius: 28px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.glass-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(56,189,248,0.4);
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 16px;
+    background: rgba(56,189,248,0.1);
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.glass-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.glass-card p {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.glass-card ul {
+    list-style: none;
+    margin-top: 25px;
+}
+
+.glass-card li {
+    margin: 14px 0;
+    color: var(--ice);
+}
+
+.glass-card li::before {
+    content: "✦";
+    color: var(--electric);
+    margin-right: 10px;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.service {
+    padding: 35px;
+    border-radius: 24px;
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,0.045);
+    transition: 0.4s;
+}
+
+.service:hover {
+    transform: translateY(-8px);
+    background: rgba(56,189,248,0.08);
+}
+
+.service-number {
+    color: var(--electric);
+    font-size: 13px;
+    margin-bottom: 35px;
+}
+
+.service h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.service p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+/* =========================
+   EDITORIAL FEATURE
+========================= */
+
+.editorial {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.editorial-image {
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.editorial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.editorial-content h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(40px,5vw,65px);
+    line-height: 1.05;
+    margin: 15px 0 25px;
+}
+
+.editorial-content p {
+    color: var(--muted);
+    line-height: 1.9;
+}
+
+.quote {
+    border-left: 2px solid var(--electric);
+    padding-left: 20px;
+    margin-top: 30px;
+    color: var(--ice);
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-style: italic;
+}
+
+/* =========================
+   PORTFOLIO
+========================= */
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+
+.work-card {
+    border: 1px solid var(--border);
+    border-radius: 25px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.045);
+}
+
+.work-image {
+    height: 280px;
+    overflow: hidden;
+}
+
+.work-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.6s;
+}
+
+.work-card:hover img {
+    transform: scale(1.05);
+}
+
+.work-content {
+    padding: 30px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 30px;
+    background: rgba(56,189,248,0.1);
+    color: var(--electric);
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+
+.work-content h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.work-content p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+/* =========================
+   ARTICLE CARDS
+========================= */
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.article {
+    padding: 30px;
+    border-radius: 22px;
+    background: rgba(255,255,255,0.045);
+    border: 1px solid var(--border);
+}
+
+.article small {
+    color: var(--electric);
+}
+
+.article h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.article p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.about-image {
+    height: 600px;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    line-height: 1;
+    margin: 15px 0 25px;
+}
+
+.about-text p {
+    color: var(--muted);
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+/* =========================
+   TESTIMONIAL
+========================= */
+
+.testimonial {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.testimonial blockquote {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(30px,4vw,48px);
+    line-height: 1.3;
+}
+
+.testimonial cite {
+    display: block;
+    color: var(--electric);
+    margin-top: 25px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-box {
+    background:
+        radial-gradient(circle at 90% 10%, rgba(56,189,248,0.2), transparent 30%),
+        rgba(255,255,255,0.05);
+    border: 1px solid var(--border);
+    border-radius: 35px;
+    padding: 70px;
+    text-align: center;
+}
+
+.contact-box h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(45px,6vw,75px);
+    margin-bottom: 20px;
+}
+
+.contact-box p {
+    color: var(--muted);
+    max-width: 650px;
+    margin: auto auto 30px;
+    line-height: 1.8;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 40px 7%;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+footer span {
+    color: var(--electric);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero,
+    .editorial,
+    .about,
+    .dual-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 130px;
+    }
+
+    .hero-visual {
+        margin-top: 20px;
+    }
+
+    .intro-strip {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .services,
+    .articles {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        height: 450px;
+    }
+
+    .contact-box {
+        padding: 45px 25px;
+    }
+}
+
+@media(max-width:550px) {
+
+    section {
+        padding: 75px 5%;
+    }
+
+    .hero {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .image-frame {
+        height: 430px;
+    }
+
+    .floating-card {
+        transform: scale(0.85);
+    }
+
+    .card-one {
+        left: -15px;
+    }
+
+    .card-two {
+        right: -15px;
+    }
+
+    .intro-strip {
+        margin: 0 5%;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+    }
+
+    .glass-card {
+        padding: 28px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+/* PHONE IMAGE FIX */
+@media (max-width: 600px) {
+    .cover-photo {
+        width: 100%;
+        max-width: 330px;
+        height: 430px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 18px;
+    }
+
+    .cover-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
+}
+/* =========================================
+   MOBILE WIDTH & OVERFLOW FIX
+========================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+section,
+header,
+main,
+footer {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Prevent large headings from pushing the page sideways */
+h1,
+h2,
+h3,
+p {
+    overflow-wrap: break-word;
+}
+
+/* =========================================
+   PHONE VERSION
+========================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        margin: 0 auto !important;
+    }
+
+    h1 {
+        font-size: clamp(38px, 12vw, 55px) !important;
+        line-height: .95 !important;
+        letter-spacing: -1.5px !important;
+    }
+
+    h2 {
+        font-size: 32px !important;
+    }
+
+    /* Images */
+    .cover-photo,
+    .hero-image {
+        width: 100% !important;
+        max-width: 330px !important;
+        height: auto !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .cover-photo img,
+    .hero-image img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: cover;
+    }
+
+    /* Cards */
+    .card,
+    .feature-card,
+    .service-card {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Grids become one column */
+    .grid,
+    .cards,
+    .services-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+/* =========================================
+   MOBILE NAVIGATION
+========================================= */
+
+.navbar,
+nav {
+    width: 100% !important;
+    max-width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        position: fixed !important;
+        top: 0;
+        left: 0 !important;
+        width: 100% !important;
+        height: 65px;
+        z-index: 9999;
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 18px !important;
+    }
+
+    nav .nav-links {
+        display: none !important;
+    }
+
+    nav .menu-btn,
+    nav .hamburger,
+    nav .mobile-menu-btn {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+    }
+
+    .hero {
+        padding-top: 90px !important;
+    }
+}
+/* =========================================
+   MOBILE NAVIGATION FIX
+========================================= */
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    font-size: 24px;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PHONE */
+@media (max-width: 900px) {
+
+    nav {
+        padding: 14px 20px !important;
+        height: 68px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .menu-btn {
+        display: flex !important;
+        position: relative;
+        z-index: 10002;
+    }
+
+    .nav-links {
+        display: none !important;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        width: 100%;
+        background: rgba(6,26,53,0.98);
+        backdrop-filter: blur(20px);
+        padding: 20px;
+        flex-direction: column;
+        gap: 0;
+        border-bottom: 1px solid rgba(255,255,255,0.12);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+    .nav-links.active {
+        display: flex !important;
+    }
+
+    .nav-links li {
+        width: 100%;
+        list-style: none;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 16px 10px;
+        font-size: 15px;
+    }
+
+    .hero {
+        padding-top: 100px !important;
+    }
+}
+
+/* =========================================
+   PHONE SIZE FIX
+========================================= */
+
+@media (max-width: 600px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden !important;
+    }
+
+    section {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .hero {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .hero h1 {
+        font-size: 44px !important;
+        line-height: 1 !important;
+        letter-spacing: -1px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-visual {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .image-frame {
+        width: min(330px, 90vw) !important;
+        height: 430px !important;
+        margin: 0 auto;
+    }
+
+    .floating-card {
+        transform: scale(0.75);
+    }
+
+    .card-one {
+        left: -5px !important;
+        bottom: 3% !important;
+    }
+
+    .card-two {
+        right: -5px !important;
+        top: 3% !important;
+    }
+
+    .intro-strip {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        width: calc(100% - 40px) !important;
+    }
+
+    .intro-strip {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .glass-card,
+    .service,
+    .article,
+    .work-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-image {
+        height: 430px !important;
+    }
+
+    .contact-box {
+        padding: 40px 20px !important;
+    }
+
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+</style>
+</head>
+
+
+<body>
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav>
+    <div class="logo">
+        OLONG <span>EA.</span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation">
+        ☰
+    </button>
+</nav>
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="molecule m1"></div>
+    <div class="molecule m2"></div>
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+            Pharmacy × Words × Strategy
+        </div>
+
+        <h1>
+            Where <span>science</span><br>
+            meets storytelling.
+        </h1>
+
+        <p>
+            I’m <strong>Olong Emmanuella Anigo</strong> — a pharmacy
+            student and versatile writer crafting intelligent,
+            persuasive and research-backed words that make brands
+            impossible to ignore.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#work" class="btn btn-primary">
+                Explore My Work
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+                Work With Me
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-visual">
+
+        <!-- CHANGE THIS IMAGE -->
+        <div class="image-frame">
+
+            <img src="emmanuella.jpg"
+                 alt="Olong Emmanuella Anigo">
+
+            <div class="image-overlay"></div>
+
+        </div>
+
+        <div class="floating-card card-one">
+
+            <strong>SEO</strong>
+            <small>Research-backed writing</small>
+
+        </div>
+
+        <div class="floating-card card-two">
+
+            <strong>Pharm.</strong>
+            <small>Science with a human voice</small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     STATS
+========================= -->
+
+<div class="intro-strip">
+
+    <div class="stat">
+        <strong>01</strong>
+        <span>Pharmacy Student</span>
+    </div>
+
+    <div class="stat">
+        <strong>50+</strong>
+        <span>Writing Disciplines</span>
+    </div>
+
+    <div class="stat">
+        <strong>SEO</strong>
+        <span>Optimized Content</span>
+    </div>
+
+    <div class="stat">
+        <strong>∞</strong>
+        <span>Ideas Worth Writing</span>
+    </div>
+
+</div>
+
+
+<!-- =========================
+     ABOUT / PHARMACY
+========================= -->
+
+<section id="about">
+
+    <div class="section-heading">
+
+        <div class="mini">The intersection</div>
+
+        <h2>
+            A writer who understands the science behind the words.
+        </h2>
+
+        <p>
+            Pharmacy taught me to respect evidence, precision and
+            detail. Writing taught me how to turn those details into
+            stories people can understand, remember and act on.
+        </p>
+
+    </div>
+
+
+    <div class="dual-grid">
+
+        <div class="glass-card">
+
+            <div class="icon">⚕</div>
+
+            <h3>Pharmacy</h3>
+
+            <p>
+                My pharmacy background gives me an appreciation for
+                scientific research, health communication and
+                evidence-based information.
+            </p>
+
+            <ul>
+                <li>Pharmacy & health content</li>
+                <li>Research-based writing</li>
+                <li>Science communication</li>
+                <li>Patient-friendly explanations</li>
+            </ul>
+
+        </div>
+
+
+        <div class="glass-card">
+
+            <div class="icon">✍</div>
+
+            <h3>Writing</h3>
+
+            <p>
+                I combine research, strategy and storytelling to
+                create content that sounds human while serving a
+                clear purpose.
+            </p>
+
+            <ul>
+                <li>Blog & article writing</li>
+                <li>Copywriting</li>
+                <li>Brand storytelling</li>
+                <li>Social media captions</li>
+                <li>Personal writing</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section id="services">
+
+    <div class="section-heading">
+
+        <div class="mini">What I create</div>
+
+        <h2>
+            Words designed to do more than fill a page.
+        </h2>
+
+    </div>
+
+
+    <div class="services">
+
+        <div class="service">
+            <div class="service-number">01 / BLOGS</div>
+            <h3>Blog Writing</h3>
+            <p>
+                Thoughtful, engaging blog posts that educate,
+                entertain and keep readers coming back.
+            </p>
+        </div>
+
+
+        <div class="service">
+            <div class="service-number">02 / COPY</div>
+            <h3>Copywriting</h3>
+            <p>
+                Persuasive copy created to move audiences from
+                curiosity to action.
+            </p>
+        </div>
+
+
+        <div class="service">
+            <div class="service-number">03 / SOCIAL</div>
+            <h3>Social Captions</h3>
+            <p>
+                Scroll-stopping captions that give brands a distinct
+                personality online.
+            </p>
+        </div>
+
+
+        <div class="service">
+            <div class="service-number">04 / BRAND</div>
+            <h3>Brand Storytelling</h3>
+            <p>
+                Stories that transform businesses from names into
+                memorable experiences.
+            </p>
+        </div>
+
+
+        <div class="service">
+            <div class="service-number">05 / SEO</div>
+            <h3>SEO Articles</h3>
+            <p>
+                Search-friendly, research-backed articles designed
+                for both readers and discoverability.
+            </p>
+        </div>
+
+
+        <div class="service">
+            <div class="service-number">06 / PERSONAL</div>
+            <h3>Personal Writing</h3>
+            <p>
+                Authentic writing that captures an individual's
+                personality, voice, experiences and message.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FEATURE
+========================= -->
+
+<section>
+
+    <div class="editorial">
+
+        <div class="editorial-image">
+
+            <!-- CHANGE THIS IMAGE -->
+            <img src="pharmacy.jpg"
+                 alt="Pharmacy research">
+
+        </div>
+
+
+        <div class="editorial-content">
+
+            <div class="mini">
+                THE PHARMACY PERSPECTIVE
+            </div>
+
+            <h2>
+                Complex science deserves beautiful explanations.
+            </h2>
+
+            <p>
+                From pharmaceutical concepts to health education,
+                good communication can make complicated information
+                feel accessible.
+            </p>
+
+            <p>
+                My goal is to create writing that respects the
+                research while still speaking to a real human being.
+            </p>
+
+            <div class="quote">
+                “Evidence gives writing credibility.
+                Storytelling gives it life.”
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PORTFOLIO
+========================= -->
+
+<section id="work">
+
+    <div class="section-heading">
+
+        <div class="mini">Selected work</div>
+
+        <h2>
+            A few things I've written.
+        </h2>
+
+        <p>
+            Replace these sample projects with Emmanuella's real
+            writing samples, published articles, campaigns and
+            portfolio pieces.
+        </p>
+
+    </div>
+
+
+    <div class="portfolio-grid">
+
+
+        <div class="work-card">
+
+            <div class="work-image">
+
+                <img src="health-article.jpg"
+                     alt="Health article">
+
+            </div>
+
+            <div class="work-content">
+
+                <span class="tag">HEALTH + SEO</span>
+
+                <h3>
+                    The Science of Better Health Communication
+                </h3>
+
+                <p>
+                    A research-backed article designed to make
+                    complex health information easier to understand.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="work-card">
+
+            <div class="work-image">
+
+                <img src="brand-story.jpg"
+                     alt="Brand storytelling">
+
+            </div>
+
+            <div class="work-content">
+
+                <span class="tag">BRAND STORY</span>
+
+                <h3>
+                    Every Brand Has a Story.
+                </h3>
+
+                <p>
+                    A narrative-driven brand story designed to create
+                    emotional connection and memorability.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="work-card">
+
+            <div class="work-image">
+
+                <img src="social-media.jpg"
+                     alt="Social media writing">
+
+            </div>
+
+            <div class="work-content">
+
+                <span class="tag">SOCIAL MEDIA</span>
+
+                <h3>
+                    Captions That Make People Stop.
+                </h3>
+
+                <p>
+                    Strategic social captions created to turn
+                    ordinary posts into conversations.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="work-card">
+
+            <div class="work-image">
+
+                <img src="copywriting.jpg"
+                     alt="Copywriting">
+
+            </div>
+
+            <div class="work-content">
+
+                <span class="tag">COPYWRITING</span>
+
+                <h3>
+                    Words That Sell Without Sounding Like Sales.
+                </h3>
+
+                <p>
+                    Human-centered copy built around clarity,
+                    persuasion and audience psychology.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ARTICLES
+========================= -->
+
+<section id="articles">
+
+    <div class="section-heading">
+
+        <div class="mini">The writing room</div>
+
+        <h2>
+            Ideas worth exploring.
+        </h2>
+
+    </div>
+
+
+    <div class="articles">
+
+        <article class="article">
+
+            <small>PHARMACY</small>
+
+            <h3>
+                Why Health Communication Needs More Empathy
+            </h3>
+
+            <p>
+                Exploring the role of clear and compassionate
+                communication in health information.
+            </p>
+
+        </article>
+
+
+        <article class="article">
+
+            <small>WRITING</small>
+
+            <h3>
+                Why Some Stories Stay With Us
+            </h3>
+
+            <p>
+                A look at the psychology of memorable storytelling
+                and emotional connection.
+            </p>
+
+        </article>
+
+
+        <article class="article">
+
+            <small>SEO</small>
+
+            <h3>
+                Writing for Humans First, Search Engines Second
+            </h3>
+
+            <p>
+                Why useful content should never sacrifice human
+                readability for keywords.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PERSONAL ABOUT
+========================= -->
+
+<section>
+
+    <div class="about">
+
+        <div class="about-image">
+
+            <!-- CHANGE THIS IMAGE -->
+            <img src="emmanuella-writing.jpg"
+                 alt="Emmanuella writing">
+
+        </div>
+
+
+        <div class="about-text">
+
+            <div class="mini">
+                Behind the words
+            </div>
+
+            <h2>
+                Meet Emmanuella.
+            </h2>
+
+            <p>
+                I am Olong Emmanuella Anigo, a pharmacy student and
+                writer fascinated by the relationship between
+                knowledge and human connection.
+            </p>
+
+            <p>
+                I enjoy researching ideas, finding the story hidden
+                inside them and transforming them into writing that
+                people genuinely want to read.
+            </p>
+
+            <p>
+                Whether I'm writing an SEO article, a brand story,
+                social caption or personal piece, I care about one
+                thing:
+                <strong>making the words matter.</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TESTIMONIAL
+========================= -->
+
+<section>
+
+    <div class="testimonial">
+
+        <div class="mini">Client words</div>
+
+        <blockquote>
+            “Good writing doesn't simply tell people something.
+            It makes them feel like they discovered it themselves.”
+        </blockquote>
+
+        <cite>
+            — Your client's testimonial goes here
+        </cite>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact">
+
+    <div class="contact-box">
+
+        <div class="mini">
+            Let's create something unforgettable
+        </div>
+
+        <h2>
+            Have a story<br>
+            worth telling?
+        </h2>
+
+        <p>
+            Whether you need a research-backed article, compelling
+            copy, a brand story or words that sound unmistakably
+            like you — let's talk.
+        </p>
+
+        <div class="buttons" style="justify-content:center;">
+
+            <a href="mailto:olongemmanuella647@gmail.com"
+               class="btn btn-primary">
+                Start a Conversation
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div>
+        © 2026 <span>Olong Emmanuella Anigo.</span>
+        All rights reserved.
+    </div>
+
+    <div>
+        Pharmacy • Writing • Storytelling
+    </div>
+
+</footer>
+
+
+<script>
+
+/* Subtle reveal animation */
+/* MOBILE NAVIGATION */
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+
+    if (navLinks.classList.contains("active")) {
+        menuBtn.innerHTML = "✕";
+    } else {
+        menuBtn.innerHTML = "☰";
+    }
+});
+
+/* Close menu when a link is clicked */
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        menuBtn.innerHTML = "☰";
+    });
+});
+const elements = document.querySelectorAll(
+    ".glass-card, .service, .work-card, .article, .editorial, .about"
+);
+
+const observer = new IntersectionObserver(
+    entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.12
+    }
+);
+
+
+elements.forEach(element => {
+
+    element.style.opacity = "0";
+    element.style.transform = "translateY(25px)";
+    element.style.transition = "opacity .7s ease, transform .7s ease";
+
+    observer.observe(element);
+
+});
+
+</script>
+
+</body>
+</html>
